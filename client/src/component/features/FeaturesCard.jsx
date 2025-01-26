@@ -7,6 +7,8 @@ import {
   FaBullhorn,
   FaFolderOpen,
 } from "react-icons/fa";
+
+
 function FeaturesCard() {
   const [data, setData] = useState(null);
 
@@ -22,8 +24,8 @@ function FeaturesCard() {
   useEffect(() => {
     fetch("/data.json") // Adjust the path here to reflect the subfolder
       .then((res) => res.json())
-      .then((data) => {
-        setData(data);
+      .then((item) => {
+        setData(item.data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);

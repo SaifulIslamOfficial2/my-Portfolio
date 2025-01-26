@@ -1,6 +1,7 @@
 import Banner from "../component/banner/Banner"
 import Features from "../component/features/Features"
-import PortFolio from "../component/portFolio/PortFolio"
+import PortFolio from "../component/portFoliSection/PortFolio"
+import Resume from "../component/resume/Resume"
 
 function Layout() {
   return (
@@ -9,6 +10,7 @@ function Layout() {
     <Banner/>
     <Features/>
     <PortFolio/>
+    <Resume/>
     </>
   )
 }
