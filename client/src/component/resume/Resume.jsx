@@ -1,7 +1,17 @@
+import { useState } from "react";
+import Education from "./Education";
+import Experience from "./Experience";
+import Interview from "./Interview";
 import ResumeCard from "./ResumeCard";
 import EducationQuality from "./ResumeCard";
+import Skills from "./Skills";
 
 function Resume() {
+  const [educationData, setEducationData] = useState(true);
+  const [skillsData, setSkillsData] = useState(false);
+  const [experienceData, setExperienceData] = useState(false);
+  const [interviewData, setInterview] = useState(false);
+
   return (
     <section className=" w-full py-20 border-b-[1px] border-b-black">
       <div className="mt-12 flex justify-center">
@@ -18,26 +28,64 @@ function Resume() {
       <div>
         <ul className=" grid w-ful grid-cols-4 mx-auto">
           <li
-            className=" hover:border-green-400 border-none text-lightText w-full h-20 bg-black bg-opacity-25 text-xl flex justify-center 
-         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] "
+            onClick={() =>
+              setEducationData(true) &
+              setSkillsData(false) &
+              setExperienceData(false) &
+              setInterview(false)
+            }
+            className={`${
+              educationData
+                ? "border-green-400 rounded-lg"
+                : "border-transparent"
+            }   text-lightText w-full h-20 bg-black bg-opacity-25 text-xl flex justify-center 
+         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px]`}
           >
             Education
           </li>
           <li
-            className="border-none text-lightText w-full h-20 bg-black bg-opacity-25 text-xl  flex justify-center 
-         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] "
+            onClick={() =>
+              setEducationData(false) &
+              setSkillsData(true) &
+              setExperienceData(false) &
+              setInterview(false)
+            }
+            className={`${
+              skillsData ? "border-green-400 rounded-lg" : "border-transparent"
+            }   text-lightText w-full h-20 bg-black bg-opacity-25 text-xl flex justify-center 
+          cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px]`}
           >
             Professional Skills
           </li>
           <li
-            className="border-none text-lightText w-full h-20 bg-black bg-opacity-25 text-xl  flex justify-center 
-         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] "
+            onClick={() =>
+              setEducationData(false) &
+              setSkillsData(false) &
+              setExperienceData(true) &
+              setInterview(false)
+            }
+            className={`${
+              experienceData
+                ? "border-green-400 rounded-lg"
+                : "border-transparent"
+            }   text-lightText w-full h-20 bg-black bg-opacity-25 text-xl flex justify-center 
+                    cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px]`}
           >
             Experience
           </li>
           <li
-            className="border-none text-lightText w-full h-20 bg-black bg-opacity-25 text-xl  flex justify-center 
-         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] "
+            onClick={() =>
+              setEducationData(false) &
+              setSkillsData(false) &
+              setExperienceData(false) &
+              setInterview(true)
+            }
+            className={`${
+              interviewData
+                ? "border-green-400 rounded-lg"
+                : "border-transparent"
+            }   text-lightText w-full h-20 bg-black bg-opacity-25 text-xl flex justify-center 
+         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px]`}
           >
             interview
           </li>
@@ -45,35 +93,10 @@ function Resume() {
       </div>
       {/*Education Quality card */}
       <div className="py-12">
-        <div className=" w-full flex gap-8">
-          <div>
-            <div>
-              <span className="text-green-400 "> 2007 - 2025</span>
-              <h2 className="text-slate-300 font-bold text-4xl">
-                Education Quality
-              </h2>
-            </div>
-            <div className=" w-full h-[800px] border-l-[6px] border-black border-opacity-30 flex flex-col gap-8 items-center mt-8  ">
-              <ResumeCard />
-              <ResumeCard />
-              <ResumeCard />
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <span className="text-green-400 "> 2007 - 2025</span>
-              <h2 className="text-slate-300 font-bold text-4xl">
-              Job Experience
-              </h2>
-            </div>
-            <div className=" w-full h-[800px] border-l-[6px] border-black border-opacity-30 flex flex-col gap-8 items-center mt-8  ">
-              <ResumeCard />
-              <ResumeCard />
-              <ResumeCard />
-            </div>
-          </div>
-        </div>
+        {educationData && <Education />}
+        {skillsData && <Skills />}
+        {experienceData && <Experience />}
+        {interviewData && <Interview />}
       </div>
     </section>
   );
