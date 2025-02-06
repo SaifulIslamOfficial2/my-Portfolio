@@ -6,12 +6,12 @@ function Navbar() {
   return (
     <div className=" sticky top-0 z-50 bg-bodyColor ">
       <div className="flex p-2 justify-center">
-        <p className="text-white">This website is under constriction</p>
+        <p className=" text-red-600">This website is under constriction</p>
       </div>
       <div className="flex items-center justify-between  p-3  ">
         <div className="flex items-center gap-2 ">
           <img
-            className="w-14 h-14 rounded-full cursor-pointer "
+            className="w-14 h-14 rounded-full cursor-pointer"
             src={logo}
             alt=""
           />

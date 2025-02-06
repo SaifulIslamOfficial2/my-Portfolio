@@ -13,7 +13,7 @@ function Resume() {
   const [interviewData, setInterview] = useState(false);
 
   return (
-    <section className=" w-full py-20 border-b-[1px] border-b-black">
+    <section className=" w-full max-w-6xl mx-auto">
       <div className="mt-12 flex justify-center">
         <div className="  text-center">
           <p className="text-green-400 uppercase  mb-2 ">
@@ -39,7 +39,7 @@ function Resume() {
                 ? "border-green-400 rounded-lg"
                 : "border-transparent"
             }   text-lightText w-full h-20 bg-black bg-opacity-25 text-xl flex justify-center 
-         cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px]`}
+                 cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px]`}
           >
             Education
           </li>
