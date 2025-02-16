@@ -20,7 +20,7 @@ const [text] = useTypewriter({
   })
 
   return (
-    <div className="flex items-center mt-12 mb-20">
+    <div className="flex max-w-7xl mx-auto items-center mt-12 mb-20">
       <div className="w-1/2">
         <div>
           <p className=" text-green-400 font-light   text-1xl  font-bodyFont mb-5 uppercase ">
@@ -77,7 +77,7 @@ const [text] = useTypewriter({
         </div>
       </div>
       {/* image section */}
-      <div className="w-1/2 justify-center flex ">
+      <div className="w-1/2 justify-end flex ">
       <div className="w-[350px] h-[400px] flex items-center p-4  bg-bodyColor shadow-shadowOne ">
         <img className=" object-cover " src={saif} alt="saif-shakib" />
       </div>

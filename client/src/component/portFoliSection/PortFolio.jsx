@@ -18,7 +18,7 @@ function PortFolio() {
   }, []);
 
   return (
-    <div className="mt-20">
+    <div className="max-w-7xl mx-auto  mt-20">
       <div className="mt-12 flex justify-center">
         <div>
           <p className="text-green-400 uppercase mb-2 ">

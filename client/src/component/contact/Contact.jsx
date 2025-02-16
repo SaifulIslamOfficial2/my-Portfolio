@@ -3,7 +3,7 @@ import cntimg from "../../assets/image/contactimg.jpg";
 import ContactLeft from "./ContactLeft";
 function Contact() {
   return (
-    <section className="mt-12 max-w-6xl mx-auto">
+    <section className="mt-12 max-w-7xl mx-auto pt-12">
       {/* Section Title */}
       <div className="mt-12 flex justify-center">
         <div className="text-center">
@@ -28,26 +28,51 @@ function Contact() {
               <div className=" flex gap-8 ">
                 <div className="w-1/2">
                  <div className="space-y-2">
-                 <p className="text-lightText">NAME</p>
+                 <p className="text-lightText font-semibold">NAME</p>
                   <input
-                      className="w-full h-11 rounded-lg border-b-[1px] border-t-[2px] border-l-[2px] border-r-[2px] border-r-bodyColor border-t-bodyColor border-l-bodyColor border-b-gray-600 bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"
+                      className="w-full text-white h-11 rounded-lg border-b-[1px] border-t-[2px] border-l-[2px] border-r-[2px] border-r-bodyColor border-t-bodyColor border-l-bodyColor border-b-gray-600 bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"
                       type="text"
                     />
                  </div>
                 </div>
                 <div className="w-1/2">
                  
-                  <div className="space-y-2">
-                  
-                    <p className="text-lightText">NAME</p>
-                    <input
-                      className="w-full h-11 rounded-lg shadow-[inset_-4px_0px_6px_rgba(255,255,255,0.2),inset_4px_0px_6px_rgba(255,255,255,0.2),inset_0px_4px_6px_rgba(255,255,255,0.2)]  border-bodyColor  bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"
-                      type="text"
+                <div className="space-y-2">
+                 <p className="text-lightText font-semibold">PHONE NUMBER</p>
+                  <input
+                      className="w-full text-white h-11 rounded-lg border-b-[1px] border-t-[2px] border-l-[2px] border-r-[2px] border-r-bodyColor border-t-bodyColor border-l-bodyColor border-b-gray-600 bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"
+                      type="number"
                     />
-                  </div>
+                 </div>
                 </div>
               </div>
 
+              <div className="space-y-2">
+                 <p className="text-lightText font-semibold">EMAIL</p>
+                  <input
+                      className="w-full text-white h-11 rounded-lg border-b-[1px] border-t-[2px] border-l-[2px] border-r-[2px] border-r-bodyColor border-t-bodyColor border-l-bodyColor border-b-gray-600 bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"
+                      type="email"
+                    />
+                 </div>
+
+                 <div className="space-y-2">
+                 <p className="text-lightText font-semibold uppercase">Subject</p>
+                  <input
+                      className="w-full text-white h-11 rounded-lg border-b-[1px] border-t-[2px] border-l-[2px] border-r-[2px] border-r-bodyColor border-t-bodyColor border-l-bodyColor border-b-gray-600 bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"
+                      type="email"
+                    />
+                 </div>
+
+                 <div className="space-y-2">
+                 <p className="text-lightText font-semibold uppercase">Subject</p>
+                <textarea   className="w-full  text-white h-24 rounded-lg border-b-[1px] border-t-[2px] border-l-[2px] border-r-[2px] border-r-bodyColor border-t-bodyColor border-l-bodyColor border-b-gray-600 bg-black bg-opacity-30 active:outline-none focus-visible:outline-green-400 outline-none px-4 focus-visible:border-b-transparent duration-300"  name="" id=""></textarea>
+                 </div>
+
+                 <div className="  py-2 px-6 text-center  rounded hover:bg-[#1c1e26]  font-semibold text-green-400 shadow-shadowOne hover:text-green-600 w-full  hover:translate-y-[-10px] duration-300 ">
+            <Link >
+              Login
+            </Link>
+          </div>
             </form>
           </div>
         </div>

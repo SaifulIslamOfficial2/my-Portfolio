@@ -13,7 +13,7 @@ function Resume() {
   const [interviewData, setInterview] = useState(false);
 
   return (
-    <section className=" w-full max-w-6xl mx-auto">
+    <section className=" w-full max-w-7xl  pt-12 mx-auto">
       <div className="mt-12 flex justify-center">
         <div className="  text-center">
           <p className="text-green-400 uppercase  mb-2 ">
