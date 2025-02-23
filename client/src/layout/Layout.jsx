@@ -1,3 +1,4 @@
+import AdsSection from "../component/ads/AdsSection"
 import Banner from "../component/banner/Banner"
 import Contact from "../component/contact/Contact"
 // import Contact from "../component/contact/Contact"
@@ -11,11 +12,13 @@ function Layout() {
     
     <>
     <Banner/>
+    <AdsSection/>
     <Features/>
     <PortFolio/>
     <Resume/>
     <Testimonial/>
     <Contact/>
+   
     </>
   )
 }
