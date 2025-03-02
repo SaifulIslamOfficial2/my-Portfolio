@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 function Education() {
   return (
-    <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:2}}} className=" w-full flex gap-8">
+    <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:2}}} className=" w-full flex flex-col lg:flex-row gap-20">
     <div>
       <div>
         <span className="text-green-400 "> 2007 - 2025</span>

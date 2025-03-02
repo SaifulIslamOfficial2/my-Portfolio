@@ -9,10 +9,10 @@ function ResumeCard() {
         </span>
       </div>
 
-      <div className="w-full bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-10 flex flex-col justify-center gap-10 shadow-shadowOne">
+      <div className="w-full bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-10 py-2 flex flex-col justify-center gap-10 shadow-shadowOne">
         <div className="flex  border-b-2 border-black border-opacity-30 pb-8  items-center justify-between">
           <div className=" ">
-            <h3 className="text-2xl font-semibold mb-2 text-lightText ">
+            <h3 className="md:text-2xl text-xl font-semibold mb-2 text-lightText ">
               Diploma in Computer Science
             </h3>
             <p className="text-lightText">Ahmad IT solution (2023 - 2025)</p>
@@ -25,7 +25,7 @@ function ResumeCard() {
         </div>
 
         <div>
-          <p className="text-lightText pt-3">The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.</p>
+          <p className="text-lightText ">The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.</p>
         </div>
       </div>
     </div>

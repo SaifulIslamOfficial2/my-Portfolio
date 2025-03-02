@@ -18,7 +18,7 @@ function PortFolio() {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto  mt-20">
+    <div className="container mx-auto  mt-20">
       <div className="mt-12 flex justify-center">
         <div>
           <p className="text-green-400 uppercase mb-2 ">
@@ -30,9 +30,9 @@ function PortFolio() {
         </div>
       </div>
       {/*portfolio card section */}
-      <div className=" grid grid-cols-3 gap-3 ">
+      <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-6 sm:gap-8 lg:gap-12">
        {data.map((item)=>(
-         <div key={item.id} className=" cursor-pointer mx-auto bg-bodyColor shadow-shadowOne rounded-md w-[350px] hover:bg-hoverbg  p-5 ">
+         <div key={item.id} className=" cursor-pointer mx-auto bg-bodyColor shadow-shadowOne rounded-md w-[350px] hover:bg-hoverbg  p-6 ">
          <div className=" transition-transform hover:scale-105 duration-300">
            <img className=" rounded object-cover" src={one} alt="" />
          </div>

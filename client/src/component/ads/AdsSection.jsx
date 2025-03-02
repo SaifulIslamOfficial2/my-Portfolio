@@ -3,14 +3,14 @@ import sectionbg from "../../assets/image/sectionbg.jpg";
 function AdsSection() {
   return (
     <section
-      className="mt-12 gap-8 rounded-sm p-8 items-center grid grid-cols-2 max-w-7xl mx-auto  "
+      className="mt-12 gap-8 rounded-sm p-8 items-center lg:grid grid-cols-2 container mx-auto  "
       style={{ backgroundImage: `url(${sectionbg})` }}
     >
-      <div className="flex justify-center items-center">
-        <img className=" rounded-md" src={awerd} alt="awerd" />
+      <div className="flex  justify-center items-center">
+        <img className="  object-cover rounded-md" src={awerd} alt="awerd" />
       </div>
       <div>
-        <div className="bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg p-10 shadow-lg">
+        <div className="bg-black bg-opacity-20 mt-12 lg:mt-0 hover:bg-opacity-30 duration-300 rounded-lg p-12 shadow-lg">
           <h1 className="text-white text-1xl font-bold mb-5">
             🏆 Proud Achievement: A Milestone in My Journey!
           </h1>

@@ -20,8 +20,8 @@ const [text] = useTypewriter({
   })
 
   return (
-    <div className="flex max-w-7xl mx-auto items-center mt-12 mb-20">
-      <div className="w-1/2">
+    <div className="flex flex-col lg:flex-row container mx-auto items-center mt-12 gap-10 lg-gap-0  mb-20">
+      <div className=" w-full  lg:w-1/2">
         <div>
           <p className=" text-green-400 font-light   text-1xl  font-bodyFont mb-5 uppercase ">
             Welcome to my world
@@ -38,7 +38,7 @@ const [text] = useTypewriter({
             innovation, I bring ideas to life with precision and creativity.
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col lg:flex-row gap-6 lg-gap-0 justify-between">
           <div>
             <h3 className="uppercase text-white mb-3">find with me</h3>
             <div className="flex gap-3">
@@ -55,7 +55,7 @@ const [text] = useTypewriter({
             </div>
           </div>
           <div>
-            <h3 className="uppercase text-white mb-3">
+            <h3 className="uppercase text-white mb-3 ">
             best skill on</h3>
             <div className="flex gap-3">
               <Link className="p-3 transition-transform  hover:scale-110 decoration-300 hover:bg-[#1c1e26]  rounded bg-bodyColor shadow-shadowOne">
@@ -77,8 +77,8 @@ const [text] = useTypewriter({
         </div>
       </div>
       {/* image section */}
-      <div className="w-1/2 justify-end flex ">
-      <div className="w-[350px] h-[400px] flex items-center p-4  bg-bodyColor shadow-shadowOne ">
+      <div className=" justify-center lg:justify-end flex  w-full  lg:w-1/2 ">
+      <div className="w-[350px] h-[400px] flex items-center  p-4  bg-bodyColor shadow-shadowOne ">
         <img className=" object-cover " src={saif} alt="saif-shakib" />
       </div>
       </div>

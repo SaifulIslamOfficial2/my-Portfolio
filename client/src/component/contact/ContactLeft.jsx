@@ -16,7 +16,7 @@ function ContactLeft() {
         <p className="text-slate-500">Phone:</p>
         <a
           href="tel:+8801863184444"
-          className="text-lightText hover:text-green-400 hover:underline"
+          className="text-slate-500 hover:text-green-400 hover:underline"
         >
           +8801863184444
         </a>
@@ -26,7 +26,7 @@ function ContactLeft() {
         <p className="text-slate-500">E-mail :</p>
         <a
           href="mailto:muftisaifulislam.bd@gmail.com"
-          className="text-lightText hover:text-green-400  hover:underline"
+          className="text-slate-500 hover:text-green-400  hover:underline"
         >
           muftisaifulislam.bd@gmail.com
         </a>

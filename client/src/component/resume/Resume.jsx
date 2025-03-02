@@ -13,7 +13,7 @@ function Resume() {
   const [interviewData, setInterview] = useState(false);
 
   return (
-    <section className=" w-full max-w-7xl  pt-12 mx-auto">
+    <section className=" w-full container   pt-12 mx-auto">
       <div className="mt-12 flex justify-center">
         <div className="  text-center">
           <p className="text-green-400 uppercase  mb-2 ">
@@ -26,7 +26,7 @@ function Resume() {
       </div>
 
       <div>
-        <ul className=" grid w-ful grid-cols-4 mx-auto">
+        <ul className=" grid w-full grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mx-auto">
           <li
             onClick={() =>
               setEducationData(true) &
