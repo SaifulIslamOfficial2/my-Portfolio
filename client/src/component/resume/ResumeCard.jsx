@@ -9,23 +9,28 @@ function ResumeCard() {
         </span>
       </div>
 
-      <div className="w-full bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-10 py-2 flex flex-col justify-center gap-10 shadow-shadowOne">
-        <div className="flex  border-b-2 border-black border-opacity-30 pb-8  items-center justify-between">
-          <div className=" ">
-            <h3 className="md:text-2xl text-xl font-semibold mb-2 text-lightText ">
+      <div className="w-full bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg px-4 md:px-10 py-4 flex flex-col justify-center gap-6 md:gap-10 shadow-shadowOne">
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row border-b-2 border-black border-opacity-30 pb-4 md:pb-8 items-start md:items-center justify-between gap-4">
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold text-lightText mb-2">
               Diploma in Computer Science
             </h3>
             <p className="text-lightText">Ahmad IT solution (2023 - 2025)</p>
           </div>
           <div>
-            <Link className="py-2 px-6  rounded   font-semibold text-green-400 bg-bodyColor shadow-shadowOne hover:text-green-600    ">
-            3.90/4
+            <Link className="py-2 px-6 rounded font-semibold text-green-400 bg-bodyColor shadow-shadowOne hover:text-green-600">
+              3.90/4
             </Link>
           </div>
         </div>
 
+        {/* Description */}
         <div>
-          <p className="text-lightText ">The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.</p>
+          <p className="text-lightText">
+            The training provided by universities in order to prepare people to
+            work in various sectors of the economy or areas of culture.
+          </p>
         </div>
       </div>
     </div>

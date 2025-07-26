@@ -1,38 +1,52 @@
-import { Link, Links } from "react-router-dom";
-import cntimg from "../../assets/image/contactimg.jpg";
+// components/Contact.jsx
+
+import React from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { schema } from "../../validation/formValid";
 import ContactLeft from "./ContactLeft";
 import ContactRight from "./ContactRight";
-
-
-
-
+import cntimg from "../../assets/image/contactimg.jpg";
 
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    setValue,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
+  const onSubmit = (data) => console.log(data);
 
   return (
-    <section className="mt-12 max-w-7xl mx-auto pt-12   ">
+    <section className="max-w-7xl mx-auto px-4 pt-12">
       {/* Section Title */}
-      <div className="mt-12 mx-auto flex justify-center">
-        <div className="text-center">
-          <p className="text-green-400 uppercase mb-2">Contact</p>
-          <h1 className="text-slate-300 font-bold text-5xl text-center mb-8">
-            Contact With Me
-          </h1>
-        </div>
+      <div className="text-center mb-12">
+        <p className="text-green-400 uppercase mb-2">Contact</p>
+        <h1 className="text-slate-300 font-bold text-4xl md:text-5xl">Contact With Me</h1>
       </div>
 
-      <div className="w-full ">
-        <div className="w-full lg:flex gap-8 sm:gap-10 lg:gap-12 justify-between">
-          {/* Left Content */}
-          <div className="bg-black  bg-opacity-20 hover:bg-opacity-30 duration-300 w-[35%] shadow-shadowOne h-full p-5 items-center rounded">
-            <img src={cntimg} alt="contact" className="rounded" />
-            <ContactLeft />
-          </div>
+      {/* Contact Layout */}
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-8">
+        {/* Left Side */}
+        <div className="w-full lg:w-[40%] bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 shadow-shadowOne p-5 rounded">
+          <img src={cntimg} alt="contact" className="rounded w-full mb-4" />
+          <ContactLeft />
+        </div>
 
-          {/* Right Content */}
-          <ContactRight/>
-         
+        {/* Right Side */}
+        <div className="w-full lg:w-[60%]">
+          <ContactRight
+            register={register}
+            handleSubmit={handleSubmit}
+            watch={watch}
+            setValue={setValue}
+            errors={errors}
+            onSubmit={onSubmit}
+          />
         </div>
       </div>
     </section>

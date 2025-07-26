@@ -6,23 +6,24 @@ import MyFooter from "./component/footer/MyFooter";
 function App() {
   return (
     <div className=" w-full text-lightText h-auto bg-bodyColor ">
-        <Navbar />
-      <div className="w-full px-6   mx-auto ">
+     
+      <div className="w-full   mx-auto ">
         <Routes>
           <Route
             path="*"
             element={
               <>
-              
+                 <Navbar />
                 <Routes>
                   <Route path="/" element={<Layout />} />
                 </Routes>
+                <MyFooter />
               </>
             }
           ></Route>
         </Routes>
       </div>
-      <MyFooter />
+     
     </div>
   );
 }

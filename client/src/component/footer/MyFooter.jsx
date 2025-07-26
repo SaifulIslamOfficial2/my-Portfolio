@@ -2,7 +2,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-
 
 function MyFooter() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white mt-8">
       <div className=" mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div>
           <h3 className="text-lg font-semibold mb-3">Company</h3>
